@@ -1,0 +1,14 @@
+#!/bin/bash
+a=1
+while [ $a -le 4 ]
+do
+python test.py > inp 
+./run < inp > out.mine
+./brute < inp > out.brute
+sudo diff out.mine out.brute > out.diff
+if [ -s out.diff ] ; then
+a=5
+else
+a=1
+fi ;
+done

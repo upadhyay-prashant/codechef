@@ -1,0 +1,24 @@
+g++ -o run cliqued.cpp 
+cliqued.cpp:53:6: error: no member named 'reset' in 'std::__1::priority_queue<int, std::__1::vector<int,
+  std::__1::allocator<int> >, comparator>'
+  mh.reset();
+  ~~ ^
+  cliqued.cpp:86:10: error: assigning to 'int' from incompatible type 'void'
+  node = mh.pop();
+  ^ ~~~~~~~~
+  cliqued.cpp:116:14: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+  scanf("%d",testcases);
+  ~~  ^~~~~~~~~
+  cliqued.cpp:135:41: error: 'comparator' does not refer to a value
+  std::sort(Kpool.begin(),Kpool.end(),comparator);
+  ^
+  cliqued.cpp:44:8: note: declared here
+  struct comparator {
+    ^
+      cliqued.cpp:137:5: error: no matching function for call to 'DJKSTR'
+      DJKSTR(S,0);
+    ^~~~~~
+      cliqued.cpp:69:6: note: candidate function not viable: requires single argument 'node', but 2 arguments were provided
+      void DJKSTR(int node){
+        ^
+

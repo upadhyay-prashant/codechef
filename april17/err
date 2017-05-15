@@ -1,0 +1,87 @@
+chefdiv.cpp:33:7: error: reference to 'hash' is ambiguous
+hash[i] = 1;
+^
+chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+std::map<long long,long long> hash;
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+candidate found by name lookup is 'std::__1::hash'
+template <class _Tp> struct hash;
+^
+  chefdiv.cpp:38:6: error: reference to 'hash' is ambiguous
+if(hash.find(i) != hash.end())
+  ^
+  chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+  std::map<long long,long long> hash;
+  ^
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+  candidate found by name lookup is 'std::__1::hash'
+  template <class _Tp> struct hash;
+  ^
+  chefdiv.cpp:38:6: error: use of class template 'hash' requires template arguments
+if(hash.find(i) != hash.end())
+  ^
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+  template is declared here
+  template <class _Tp> struct hash;
+  ~~~~~~~~~~~~~~~~~~~~        ^
+  chefdiv.cpp:38:10: error: cannot use dot operator on a type
+if(hash.find(i) != hash.end())
+  ^
+  chefdiv.cpp:43:10: error: reference to 'hash' is ambiguous
+  if(hash.find(i/primes[j] ==hash.end())){
+    ^
+      chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+      std::map<long long,long long> hash;
+    ^
+      /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+      candidate found by name lookup is 'std::__1::hash'
+      template <class _Tp> struct hash;
+    ^
+      chefdiv.cpp:43:10: error: use of class template 'hash' requires template arguments
+      if(hash.find(i/primes[j] ==hash.end())){
+        ^
+          /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+          template is declared here
+          template <class _Tp> struct hash;
+        ~~~~~~~~~~~~~~~~~~~~        ^
+          chefdiv.cpp:43:14: error: cannot use dot operator on a type
+          if(hash.find(i/primes[j] ==hash.end())){
+            ^
+              chefdiv.cpp:46:16: error: reference to 'hash' is ambiguous
+              res=res+ hash[primes[j]] + hash[i/primes[j]] + 2;
+            ^
+              chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+              std::map<long long,long long> hash;
+            ^
+              /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+              candidate found by name lookup is 'std::__1::hash'
+              template <class _Tp> struct hash;
+            ^
+              chefdiv.cpp:46:34: error: reference to 'hash' is ambiguous
+              res=res+ hash[primes[j]] + hash[i/primes[j]] + 2;
+            ^
+              chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+              std::map<long long,long long> hash;
+            ^
+              /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+              candidate found by name lookup is 'std::__1::hash'
+              template <class _Tp> struct hash;
+            ^
+              chefdiv.cpp:49:3: error: use of undeclared identifier 'res'
+              res=res+2;
+            ^
+              chefdiv.cpp:49:7: error: use of undeclared identifier 'res'
+              res=res+2;
+            ^
+              chefdiv.cpp:50:3: error: reference to 'hash' is ambiguous
+              hash[i] = res;
+            ^
+              chefdiv.cpp:15:31: note: candidate found by name lookup is 'hash'
+              std::map<long long,long long> hash;
+            ^
+              /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/memory:3171:29: note: 
+              candidate found by name lookup is 'std::__1::hash'
+              template <class _Tp> struct hash;
+            ^
+

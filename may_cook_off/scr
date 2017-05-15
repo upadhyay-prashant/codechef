@@ -1,0 +1,5 @@
+python test.py > out.1
+./test < out.1 > out.2
+./convert < out.2 > out.3
+./run < out.3 > out.4
+

@@ -1,0 +1,15 @@
+GPD thoughts
+
+-> build a trie for all the keys first.  O[N*32]
+-> for all the nodes calculate the path with OR. this will help decide wether to go a path or not as it will have key information. O[N] DFS
+-> calculate minimum and maximum on the path and print. O[Q*32]
+
+
+largest:
+increase->  ptr==2, ( res==1, trie-> 0| res=0, trie->1)
+            ptr==1, (res==0 , trie->1)
+            ptr==0, (res==1, trie-> 0)
+ 
+smallest:
+increase-> ptr==2, ( res==1, trie->1 | res==0, trie->0)
+

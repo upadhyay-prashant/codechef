@@ -1,0 +1,3 @@
+g++ -o run check chefdiv.cpp
+./run < inp > out 
+sudo vi -d out out.gold

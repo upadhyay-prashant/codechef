@@ -1,0 +1,35 @@
+
+a[]	sum
+0	0
+100	100
+100	200
+100	300
+1	301
+100	401
+12	413
+147	560
+10	570
+100	670
+109	779
+190	969
+213	1182
+13	1195
+46	1241
+102	1343
+29	1372
+87	1459
+27	1486
+174	1660
+193	1853
+	 end=20 , start=2, sum[end]=1853 sum[start]=200 , sum[end]-sum[start]=1653
+	 looping for b now..... largest = 1072, start= 3, end = 16
+	++ for start = 4, end= 17, sum= 1158 	 start end updated
+	++ for start = 6, end= 19, sum= 1247 	 start end updated	 result is updated from 1653 to 406
+	 looping for b now..... largest = 899, start= 7, end = 17
+	++ for start = 8, end= 18, sum= 916 	 start end updated	 result is updated from 406 to 1322
+	 looping for b now..... largest = 702, start= 9, end = 16
+	++ for start = 10, end= 17, sum= 680 	 result is updated from 1322 to 620
+	 looping for b now..... largest = 462, start= 10, end = 14
+	++ for start = 11, end= 15, sum= 374 	 result is updated from 620 to 1082
+	 looping for b now..... largest = 213, start= 11, end = 12
+	++ for start = 12, end= 13, sum= 13 	 result is updated from 1082 to 869869

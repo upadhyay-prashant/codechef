@@ -1,0 +1,51 @@
+cliqued.cpp:40:30: error: expected ';' after return statement
+else return edges[i].length
+^
+;
+cliqued.cpp:49:1: error: unknown type name 'priority_queue'
+priority_queue<int , std::vector<int>, comparator> mh;
+^
+cliqued.cpp:49:15: error: expected unqualified-id
+priority_queue<int , std::vector<int>, comparator> mh;
+^
+cliqued.cpp:52:3: error: use of undeclared identifier 'mh'
+mh.reset();
+^
+cliqued.cpp:71:7: error: use of undeclared identifier 'mh'
+mh.push(paths[node][i]);
+^
+cliqued.cpp:79:9: error: use of undeclared identifier 'mh'
+mh.push(i*-1);
+^
+cliqued.cpp:83:10: error: use of undeclared identifier 'mh'
+while(!mh.empty()){
+  ^
+    cliqued.cpp:84:15: error: use of undeclared identifier 'mh'
+    int val = mh.top();
+  ^
+    cliqued.cpp:85:12: error: use of undeclared identifier 'mh'
+    node = mh.pop();
+  ^
+    cliqued.cpp:93:11: error: use of undeclared identifier 'mh'
+    mh.push(paths[node][i]);
+  ^
+    cliqued.cpp:100:11: error: use of undeclared identifier 'mh'
+    mh.push(i*-1);
+  ^
+    cliqued.cpp:115:14: warning: format specifies type 'int *' but the argument has type 'int' [-Wformat]
+    scanf("%d",testcases);
+  ~~  ^~~~~~~~~
+    cliqued.cpp:134:41: error: 'comparator' does not refer to a value
+    std::sort(Kpool.begin(),Kpool.end(),comparator);
+  ^
+    cliqued.cpp:43:8: note: declared here
+    struct comparator {
+      ^
+        cliqued.cpp:136:5: error: no matching function for call to 'DJKSTR'
+        DJKSTR(S,0);
+      ^~~~~~
+        cliqued.cpp:68:6: note: candidate function not viable: requires single argument 'node', but 2 arguments were provided
+        void DJKSTR(int node){
+          ^
+            1 warning and 13 errors generated.
+
